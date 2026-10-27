@@ -134,7 +134,7 @@ class _HomeState extends State<Home> {
                               ),
 
                               // SizedBox(height: 10),
-                              trailing: Column(
+                              trailing: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -143,10 +143,11 @@ class _HomeState extends State<Home> {
                                     "\$ ${products[index].price.toString()}",
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(
-                                      // fontSize: 18,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  SizedBox(width: 5),
                                   FilledButton(
                                     onPressed: () {},
                                     style: FilledButton.styleFrom(
